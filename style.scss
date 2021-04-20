@@ -56,7 +56,21 @@ p {
 
 .hamburger {
     cursor: pointer;
+    background: transparent url("images/icon-hamburger.svg") no-repeat center center;
+    border: none;
     display: none;
+    height: 1rem;
+    outline: none;
+    width: 2.25rem;
+
+    &.active {
+        background-image: url("images/icon-close.svg");
+    }
+
+    &:focus {
+        box-shadow: 0 0 1px 0.1rem #FFFFFF,
+                    0 0 1px 0.3rem #15a83a;
+    }
 }
 
 .b-text {
@@ -100,6 +114,11 @@ p {
 
     &:hover {
         opacity: 0.6;
+    }
+
+    &:focus {
+        box-shadow: 0 0 1px 0.1rem #FFFFFF,
+                    0 0 1px 0.25rem #2bb7da;
     }
 }
 
